@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--        bootstrap link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <title>Note Me</title>
+    </head>
+    
+    
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="{% url 'note_list' %}">NoteMe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Option</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <center><br/><h1 class="container">Note Details</h1></center>
+        <div class="container">
+            <h3>Name: {{object.name}}</h3>
+            <h6>Serial: {{ object.serial }}</h6>
+            <br><br><br><a class="navbar-brand" href="{% url 'note_list' %}"><button class="btn btn-dark my-2 my-sm-0">Back</button></a>
+        </div>
+        
+        <br><br><br>
+        <!-- Footer -->
+        <footer class="page-footer font-small special-color-dark pt-4">
+            <div class="footer-copyright text-center py-3">
+                <p style="font-size: 10px;">2019 © Shaikh Nazmul Islam, ID: <a href="#">16135125</a> & Abul Kashem, ID: <a href="#">16135136</a></p>
+            </div>
+        </footer>
+      <!-- Footer -->
+        
+    </body>
+    
+</html>
